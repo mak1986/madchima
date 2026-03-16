@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>madchima-org-net</title>
+  <meta name="keywords" content="เว็ปไซค์เพื่อการปฏิบัติกรรมฐาน มัชฌิมา แบบลำดับ, madchima">
+  <meta name="description" content="เว็ปไซค์เพื่อการปฏิบัติกรรมฐาน มัชฌิมา แบบลำดับ">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="./assets/tailwind.cdn.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Sarabun', 'Noto Sans Thai', 'sans-serif'],
+            cinzel: ['Cinzel', 'serif']
+          },
+          colors: {
+            accent: '#D4AA6E'
+          },
+          maxWidth: {
+            'site': '960px'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ① Header -->
+  <header>
+    <div class="mx-auto px-4 max-w-site text-center">
+      <a href="http://www.madchima.org/forum/index.php?topic=16583.0" target="_blank">
+        <img src="./assets/header-banner.png" alt="Madchima">
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero spacer: shows monks background -->
+  <div class="h-[50vh] min-h-[200px] max-h-[380px]"></div>
+
+  <div class="mx-auto px-4 max-w-site">
+
+    <!-- ② Navigation -->
+    <nav aria-label="ลิงก์หลัก" class="py-6">
+      <h2 class="font-cinzel text-sm font-semibold text-accent mb-3 text-center tracking-wide">
+        ลิงก์แนะนำที่ควรเข้าไปศึกษาเกี่ยวกับกรรมฐานสายนี้</h2>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <a href="https://www.madchima.org/forum/index.php"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">ไปเว็บบอร์ด</a>
+        <a href="https://www.madchima.org/madchima/aboutnew/index.php"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">เกี่ยวกับ</a>
+        <a href="https://www.madchima.org/madchima/aboutnew/contract.php"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">ติดต่อฉัน</a>
+        <a href="https://madchima.org/kjn" class="btn inline-flex items-center px-3 py-2 rounded-full">สำหรับศิษย์</a>
+        <a href="http://madchimardn.3bbddns.com:12594/pkg/ownCloud/"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">คลังข้อมูล</a>
+        <a href="https://www.facebook.com/profile.php?id=100095009014141"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">FB-ทั่วไป</a>
+        <a href="https://www.facebook.com/profile.php?id=100072407452063"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">FB-ศิษย์</a>
+        <a href="https://www.madchima.org/forum58/index.php"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">กัจจายนะ</a>
+        <a href="http://madchimardn.3bbddns.com:12590/kjn2/"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">บทความ</a>
+        <a href="http://madchimardn.3bbddns.com:12590/vdo2/login.php"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">วีดีโอ</a>
+        <a href="https://www.madchima.org/forum/index.php?topic=23686.0"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">บริจาค</a>
+        <a href="https://www.madchima.org/forum58/index.php?topic=153.0"
+          class="btn inline-flex items-center px-3 py-2 rounded-full">ผลงาน</a>
+        <a href="https://madchima.org/mad/" class="btn inline-flex items-center px-3 py-2 rounded-full">หน้าใหม่</a>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- ③ Radio station -->
+      <section aria-label="วิทยุออนไลน์"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-black/40 backdrop-blur-md border border-[rgba(255,245,220,0.08)] rounded-xl shadow-lg overflow-hidden p-4 md:p-6">
+        <div class="p-4 text-base leading-relaxed md:pr-6 md:border-r md:border-[rgba(255,245,220,0.08)]">
+          WELcome to madchimaRDN Station<br>
+          ยินดีต้อนรับ<br>
+          โปรดกดปุ่มเล่น เปิดวิทยุ ถ้าต้องการฟัง<br>
+          ระบบปิดไว้เพื่อให้ท่านไม่รำคาญ
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 p-4">
+          <audio controls src="http://rdn2567.thddns.net:4220/;"></audio>
+          <a href="https://madchima.net"
+            class="inline-flex items-center px-4 py-2 rounded-full bg-[rgba(255,255,255,0.08)] border border-[rgba(255,245,220,0.12)] text-[var(--text)] hover:bg-[rgba(240,192,96,0.22)] hover:border-accent hover:text-accent transition">หากไม่สามารถฟังได้กดลิงก์นี้เพื่อไปหน้าวิทยุ</a>
+        </div>
+      </section>
+
+      <!-- ④ YouTube videos (first batch) -->
+      <section class="video-section" aria-label="วีดีโอแนะนำ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow transition-transform hover:-translate-y-1 hover:shadow-2xl">
+            <iframe src="https://www.youtube.com/embed/gO_b1xiQjQw" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              วีดีโอแนะนำบอรด์ประวัติหลวงปู่สุก ไก่เถื่อน</div>
+          </div>
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow transition-transform hover:-translate-y-1 hover:shadow-2xl">
+            <iframe src="https://www.youtube.com/embed/-uYa09JNOvY" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              วีดีโอแนะนำบอร์ดสนทนาธรรมเว็บหลัก</div>
+          </div>
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow transition-transform hover:-translate-y-1 hover:shadow-2xl">
+            <iframe src="https://www.youtube.com/embed/YwiCAe65XII" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              แนะนำวิธีการสมัครสมาชิกบอร์ดสนทนาธรรม</div>
+          </div>
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow transition-transform hover:-translate-y-1 hover:shadow-2xl">
+            <iframe src="https://www.youtube.com/embed/XYYPENkEDl0?si=aHNiG1BxTrEDPsJy" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+              class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              เพลงปณิธานการเผยแผ่ธรรมของธัมมะวังโส</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑤ Secondary navigation (temple links) -->
+      <section aria-label="ลิงก์วัดราชสิทธาราม"
+        class="my-6 text-center p-6 bg-[rgba(20,16,10,0.32)] rounded-xl border border-[rgba(255,245,220,0.06)] shadow-lg">
+        <h2 class="font-cinzel text-base font-bold text-accent mb-3">ลิงก์แนะนำเว็บศูนย์กลางกรรมฐาน วัดราชสิทธาราม</h2>
+        <nav class="flex flex-wrap gap-2 justify-center mb-3" aria-label="เว็บสมเด็จสุก">
+          <a href="http://www.somdechsuk.org/"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.08)] border border-[rgba(200,170,110,0.4)] text-[var(--text)]">เว็บสมเด็จสุก</a>
+          <a href="https://www.facebook.com/phrakrusittisongvon"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.08)] border border-[rgba(200,170,110,0.4)] text-[var(--text)]">FB-พระครูสิทธิสังวร</a>
+          <a href="http://www.somdechsuk.org/node/89"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.08)] border border-[rgba(200,170,110,0.4)] text-[var(--text)]">ติดต่อคณะ5</a>
+          <a href="http://www.somdechsuk.org/node/64"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.08)] border border-[rgba(200,170,110,0.4)] text-[var(--text)]">สมเด็จสุก
+            ไก่เถื่อน</a>
+        </nav>
+        <h3 class="text-sm font-medium text-[var(--muted)] mb-3">ลิงก์เว็บสำรองถ้าเว็บหลัก org ติด certificate</h3>
+        <nav class="flex flex-wrap gap-2 justify-center" aria-label="เว็บสำรอง">
+          <a href="http://somdechsuk.com"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.06)] border border-[rgba(200,170,110,0.25)] text-[var(--text)]">เว็บสมเด็จสุก</a>
+          <a href="http://somdechsuk.com/page.php?id=8"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.06)] border border-[rgba(200,170,110,0.25)] text-[var(--text)]">ติดต่อคณะ5</a>
+          <a href="http://somdechsuk.com/content-detail.php?id=89#.VCc38Pl_ukF"
+            class="inline-block px-4 py-2 rounded-full bg-[rgba(200,170,110,0.06)] border border-[rgba(200,170,110,0.25)] text-[var(--text)]">ประวัติสมเด็จ</a>
+        </nav>
+      </section>
+
+      <!-- ⑥ Teacher biography (Phrakhru Sitthi Sangwon) -->
+      <section aria-label="ชีวประวัติพระครูสิทธิสังวร"
+        class="my-6 grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto] bg-[rgba(10,8,5,0.28)] rounded-xl border border-[rgba(255,245,220,0.06)] shadow-lg overflow-hidden">
+        <div class="md:row-span-2 max-h-[420px] md:max-h-none overflow-hidden">
+          <img src="http://madchima.org/madchima/images/prakru2566.jpg" alt="พระครูสิทธิสังวร"
+            class="w-full h-full object-cover object-top block">
+        </div>
+        <div class="p-6 border-b border-[rgba(255,245,220,0.06)]">
+          <h2 class="font-cinzel text-lg text-accent mb-3">พระครูสิทธิสังวร</h2>
+          <p class="text-sm leading-relaxed text-[var(--text)]">
+            หน้าที่<br>
+            พ.ศ. ๒๕๓๙ เป็นพระวินยาธิการ ประจำเขต บางกอกใหญ่<br>
+            พ.ศ. ๒๕๔๐ รักษาการเจ้าคณะ ๕ คณะกัมมัฏฐาน<br>
+            พ.ศ. ๒๕๔๑ ได้รับแต่งตั้งเป็นเจ้าคณะ ๕ คณะกัมมัฏฐาน<br>
+            พ.ศ. ๒๕๔๙ เป็นกรรมการดูแล สร้างหลังคาพระอุโบสถ<br>
+            พ.ศ. ๒๕๕๓ เป็นคณะกรรมการอนุรักษ์และบูรณะภาพจิตรกรรมฝาผนัง พระอุโบสถ วัดราชสิทธาราม<br>
+            สมณศักดิ์<br>
+            พ.ศ. ๒๕๓๔ เป็น พระครูใบฎีกา ถานานุกรม ใน พระราชพิพัฒน์วิริยาภรณ์ เจ้าอาวาส วัดราชสิทธาราม<br>
+            พ.ศ. ๒๕๓๙ เป็นพระครูสังฆรักษ์ ถานานุกรม ใน พระเทพศีลวิสุทธิ์ เจ้าอาวาส วัดราชสิทธาราม<br>
+            พ.ศ.๒๕๕๒ เป็นพระครูสัญญาบัตรชั้นเอก ฝ่ายวิปัสสนาธุร ที่ พระครูสิทธิสังวร
+          </p>
+        </div>
+        <div class="p-4">
+          <iframe src="https://www.youtube.com/embed/H_i8pSFtfZ8" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="w-full aspect-video rounded-md shadow-md border-0"></iframe>
+        </div>
+      </section>
+
+      <!-- ⑦ More YouTube videos -->
+      <section class="video-section" aria-label="วีดีโอเพิ่มเติม">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow">
+            <iframe src="https://www.youtube.com/embed/qUn4YWGAYWI" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              ประวัติกรรมฐาน มัชฌิมาแบบลำดับ</div>
+          </div>
+          <div
+            class="bg-black/30 backdrop-blur-sm border border-[rgba(255,245,220,0.08)] rounded-lg overflow-hidden shadow">
+            <iframe src="https://www.youtube.com/embed/UCSYIUpGM-s" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen class="w-full aspect-video border-0 block"></iframe>
+            <div
+              class="p-2 text-sm text-[var(--muted)] bg-[rgba(0,0,0,0.12)] border-t border-[rgba(255,245,220,0.06)] text-center">
+              การขึ้นกรรมฐานที่ คณะ 5 วัดราชสิทธาราม</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑧ Forum board banner feeds -->
+      <section class="forum-feeds" aria-label="ฟีดกระดานสนทนา">
+
+        <div class="mb-5">
+          <a href="https://www.madchima.org/forum" target="_blank" class="block rounded-t-xl overflow-hidden shadow-md">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-2.png" alt="เว็บบอร์ด Madchima"
+              class="w-full block">
+          </a>
+          <div
+            class="bg-black/30 border border-t-0 border-[rgba(255,245,220,0.06)] rounded-b-xl overflow-hidden shadow-md">
+            <iframe src="forum-mock/showtopic.html" data-live="https://www.madchima.org/forum/showtopic.php"
+              class="w-full h-[280px] border-0 block"></iframe>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <a href="https://www.madchima.org/forum58" target="_blank"
+            class="block rounded-t-xl overflow-hidden shadow-md">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-4.png" alt="เว็บบอร์ด กัจจายนะ"
+              class="w-full block">
+          </a>
+          <div
+            class="bg-black/30 border border-t-0 border-[rgba(255,245,220,0.06)] rounded-b-xl overflow-hidden shadow-md">
+            <iframe src="forum-mock/showtopic.html" data-live="https://www.madchima.org/forum58/showtopic.php"
+              class="w-full h-[280px] border-0 block"></iframe>
+          </div>
+        </div>
+
+        <div class="bg-black/30 border border-[rgba(255,245,220,0.06)] rounded-xl overflow-hidden shadow-md mb-5">
+          <iframe src="forum-mock/whoonline.html" data-live="https://www.madchima.org/forum/whoonline1.php"
+            class="w-full h-[200px] border-0 block"></iframe>
+        </div>
+
+        <a href="https://www.madchima.org/forum58" target="_blank"
+          class="block mb-5 rounded-xl overflow-hidden shadow-md">
+          <img src="https://www.madchima.org/madchima/images/A1/bd23-5.png" alt="เว็บบอร์ด" class="w-full block">
+        </a>
+
+        <div class="bg-black/30 border border-[rgba(255,245,220,0.06)] rounded-xl overflow-hidden shadow-md mb-5">
+          <iframe src="forum-mock/tableloop.html" data-live="https://www.madchima.org/forum/tableloop1.php"
+            class="w-full h-[700px] border-0 block"></iframe>
+        </div>
+
+      </section>
+
+      <!-- ⑨ Board showcase grid (6 boards) -->
+      <section class="boards-showcase" aria-label="บอร์ดเด่น">
+
+        <div
+          class="flex flex-col md:flex-row items-stretch mb-6 bg-black/30 backdrop-blur-md border border-yellow-500/30 rounded-2xl overflow-hidden shadow-2xl group transition-all duration-500 hover:border-gold-500/40">
+
+          <div
+            class="relative w-full md:w-44 h-40 md:h-auto shrink-0 p-2 bg-black/20 border-b md:border-b-0 md:border-r border-white/10">
+
+            <div
+              class="absolute inset-2 border border-yellow-500/30 rounded-2xl pointer-events-none z-10 group-hover:border-yellow-500/60 transition-colors duration-500">
+            </div>
+
+            <a href="https://www.madchima.org/forum/index.php?board=8.0" target="_blank"
+              class="block h-full w-full rounded-2xl overflow-hidden relative">
+              <img src="./assets/board-icon-8.png" alt="บอร์ด 8"
+                class="w-full h-full object-cover transform transition-transform duration-700">
+            </a>
+          </div>
+
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html"
+              class="w-full h-[260px] border-0 block transition-opacity duration-300"></iframe>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-stretch mb-6 bg-black/30 backdrop-blur-md border border-yellow-500/30 rounded-2xl overflow-hidden shadow-2xl group transition-all duration-500 hover:border-gold-500/40">
+
+          <div
+            class="relative w-full md:w-44 h-40 md:h-auto shrink-0 p-2 bg-black/20 border-b md:border-b-0 md:border-r border-white/10">
+
+            <div
+              class="absolute inset-2 border border-yellow-500/30 rounded-2xl pointer-events-none z-10 group-hover:border-yellow-500/60 transition-colors duration-500">
+            </div>
+
+            <a href="https://www.madchima.org/forum/index.php?board=2.0" target="_blank"
+              class="block h-full w-full rounded-2xl overflow-hidden relative">
+              <img src="./assets/board-icon-2.jpg" alt="บอร์ด 2"
+                class="w-full h-full object-cover transform transition-transform duration-700">
+            </a>
+          </div>
+
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html"
+              class="w-full h-[260px] border-0 block transition-opacity duration-300"></iframe>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-stretch mb-6 bg-black/30 backdrop-blur-md border border-yellow-500/30 rounded-2xl overflow-hidden shadow-2xl group transition-all duration-500 hover:border-gold-500/40">
+
+          <div
+            class="relative w-full md:w-44 h-40 md:h-auto shrink-0 p-2 bg-black/20 border-b md:border-b-0 md:border-r border-white/10">
+
+            <div
+              class="absolute inset-2 border border-yellow-500/30 rounded-2xl pointer-events-none z-10 group-hover:border-yellow-500/60 transition-colors duration-500">
+            </div>
+
+            <a href="https://www.madchima.org/forum/index.php?board=6.0" target="_blank"
+              class="block h-full w-full rounded-2xl overflow-hidden relative">
+              <img src="./assets/board-icon-6.png" alt="บอร์ด 6"
+                class="w-full h-full object-cover transform transition-transform duration-700">
+            </a>
+          </div>
+
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html"
+              class="w-full h-[260px] border-0 block transition-opacity duration-300"></iframe>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start gap-4 mb-4 bg-black/30 border border-[rgba(255,245,220,0.06)] rounded-xl overflow-hidden shadow-lg">
+          <div
+            class="w-24 flex items-center justify-center p-2 bg-[rgba(0,0,0,0.12)] border-r border-[rgba(255,245,220,0.06)]">
+            <a href="https://www.madchima.org/forum/index.php?board=16.0" target="_blank">
+              <img src="https://www.madchima.org/madchima/images/board-16.png" alt="บอร์ด 16" class="w-20 h-auto">
+            </a>
+          </div>
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html" data-live="https://www.madchima.org/forum/testboard16.php"
+              class="w-full h-[260px] border-0 block"></iframe>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start gap-4 mb-4 bg-black/30 border border-[rgba(255,245,220,0.06)] rounded-xl overflow-hidden shadow-lg">
+          <div
+            class="w-24 flex items-center justify-center p-2 bg-[rgba(0,0,0,0.12)] border-r border-[rgba(255,245,220,0.06)]">
+            <a href="https://www.madchima.org/forum/index.php?board=30.0" target="_blank">
+              <img src="https://www.madchima.org/madchima/images/board-30.png" alt="บอร์ด 30" class="w-20 h-auto">
+            </a>
+          </div>
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html" data-live="https://www.madchima.org/forum/testboard30.php"
+              class="w-full h-[260px] border-0 block"></iframe>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start gap-4 mb-4 bg-black/30 border border-[rgba(255,245,220,0.06)] rounded-xl overflow-hidden shadow-lg">
+          <div
+            class="w-24 flex items-center justify-center p-2 bg-[rgba(0,0,0,0.12)] border-r border-[rgba(255,245,220,0.06)]">
+            <a href="https://www.madchima.org/forum/index.php?board=21.0" target="_blank">
+              <img src="https://www.madchima.org/madchima/images/board-21.png" alt="บอร์ด 21" class="w-20 h-auto">
+            </a>
+          </div>
+          <div class="flex-1">
+            <iframe src="forum-mock/testboard.html" data-live="https://www.madchima.org/forum/testboard21.php"
+              class="w-full h-[260px] border-0 block"></iframe>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ⑩ Facebook section -->
+      <section class="facebook-section flex flex-col md:flex-row gap-4" aria-label="Facebook">
+
+        <div class="facebook-likebox">
+          <a href="http://www.facebook.com/pages/MadchimaRDN/254017494646438" target="blank">
+            <img width="500px" src="http://www.madchima.org/madchima57/images/319_facebook.png"
+              alt="MadchimaRDN Facebook">
+          </a>
+          <iframe
+            src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FMadchimaRDN%2F254017494646438&amp;width=724&amp;height=900&amp;show_faces=true&amp;colorscheme=light&amp;stream=true&amp;border_color=blue&amp;header=true"
+            scrolling="no" frameborder="0"
+            style="display:flex;justify-content: center; margin:0 auto; overflow:hidden; width:300px; height:500px;"
+            allowtransparency="true"></iframe>
+        </div>
+
+        <div class="facebook-banners">
+          <a href="https://www.youtube.com/channel/UCUBHM5W5ofMEdD0I2W7q1pQ?view_as=subscriber" target="_blank">
+            <img src="http://www.madchima.org/madchima/images/A1/bd23-6.png" alt="YouTube Channel MadchimaRDN">
+          </a>
+
+          <a href="https://madchima.org/kjn" target="_blank">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-66.png" alt="คลังข้อมูลสำหรับศิษย์">
+          </a>
+          <a href="https://www.facebook.com/madchimaRDN" target="_blank">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-7.png" alt="Facebook MadchimaRDN">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100072407452063" target="_blank">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-10.png" alt="Facebook">
+          </a>
+          <a href="https://www.facebook.com/raponsan.phuakphasook" target="_blank">
+            <img src="https://www.madchima.org/madchima/images/A1/bd23-11.png" alt="Facebook">
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- /.container -->
+
+  <!-- ⑪ Footer -->
+  <footer>
+    <div class="mx-auto px-4 max-w-site text-center">
+      <div class="footer-image">
+        <img src="./assets/footer-banner.png" alt="">
+      </div>
+      <p>Email to: <a href="/cdn-cgi/l/email-protection#fd89989c908e9c8f9c9f888f94bd909c999e9594909cd3928f9a"><span
+            class="__cf_email__"
+            data-cfemail="fa8e9f9b97899b889b988f8893ba979b9e999293979bd495889d">[email&#160;protected]</span></a></p>
+      <p>none copyright @ 2558 by ทีมงาน มัชฌิมา สระบุรี</p>
+      <script type="text/javascript" language="javascript1.1"
+        src="http://tracker.stats.in.th/tracker.php?uid=15601"></script>
+      <noscript><a target="_blank" href="http://www.stats.in.th/">www.Stats.in.th</a></noscript>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

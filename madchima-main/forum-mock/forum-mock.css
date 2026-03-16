@@ -1,0 +1,226 @@
+/* forum-mock.css — dark natural glass theme
+   Matches design tokens from the main style.css */
+
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+
+   body {
+     font-family: 'Sarabun', system-ui, -apple-system, 'Noto Sans Thai', sans-serif;
+     font-size: 13px;
+     color: #F0E8D0;
+     background: transparent;
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     padding: 8px;
+     line-height: 1.6;
+   }
+   
+   a {
+     color: #C8A96E;
+     text-decoration: none;
+   }
+   
+   a:hover {
+     color: #E8C888;
+     text-decoration: underline;
+   }
+   
+   /* ===== Category header ===== */
+   .category-header {
+     font-size: 11.5px;
+     font-weight: 700;
+     color: #F0E8D0;
+     background: rgba(180, 140, 70, 0.22);
+     border-left: 3px solid #C8A96E;
+     padding: 5px 10px;
+     margin: 10px 0 3px;
+     border-radius: 0 4px 4px 0;
+     letter-spacing: 0.04em;
+   }
+   
+   /* ===== Post list ===== */
+   .post-list {
+     list-style: none;
+   }
+   
+   .post-list li {
+     border-bottom: 1px solid rgba(255, 245, 220, 0.12);
+     padding: 6px 4px;
+     display: grid;
+     grid-template-columns: 1fr auto;
+     grid-template-rows: auto auto;
+     gap: 1px 10px;
+     align-items: start;
+     transition: background 0.15s;
+   }
+   
+   .post-list li:hover {
+     background: rgba(255, 245, 200, 0.06);
+     border-radius: 4px;
+   }
+   
+   .post-list li:last-child {
+     border-bottom: none;
+   }
+   
+   .post-title {
+     font-weight: 600;
+     font-size: 13px;
+     grid-column: 1;
+     grid-row: 1;
+     color: #E8D8A8;
+   }
+   
+   .post-title a {
+     color: #E8D8A8;
+   }
+   
+   .post-title a:hover {
+     color: #FFF0C0;
+   }
+   
+   .post-meta {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.50);
+     grid-column: 1;
+     grid-row: 2;
+   }
+   
+   .post-author {
+     color: #C8A96E;
+     font-weight: 500;
+   }
+   
+   .post-date {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.45);
+     white-space: nowrap;
+     text-align: right;
+     grid-column: 2;
+     grid-row: 1;
+   }
+   
+   .post-replies {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.35);
+     text-align: right;
+     grid-column: 2;
+     grid-row: 2;
+   }
+   
+   /* ===== Board label pill ===== */
+   .post-board {
+     font-size: 10px;
+     color: #F0E8D0;
+     background: rgba(180, 140, 70, 0.30);
+     border: 1px solid rgba(255, 245, 220, 0.20);
+     padding: 1px 6px;
+     border-radius: 999px;
+     margin-right: 5px;
+     white-space: nowrap;
+   }
+   
+   /* ===== Full board list (tableloop) ===== */
+   .board-list {
+     list-style: none;
+   }
+   
+   .board-list li {
+     border-bottom: 1px solid rgba(255, 245, 220, 0.08);
+     padding: 8px 6px;
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+     gap: 8px;
+     transition: background 0.15s;
+   }
+   
+   .board-list li:hover {
+     background: rgba(255, 245, 200, 0.04);
+     border-radius: 4px;
+   }
+   
+   .board-list li:last-child { border-bottom: none; }
+   
+   .board-name { flex: 1; }
+   
+   .board-name a {
+     color: #C8A96E;
+     font-weight: 600;
+     font-size: 12.5px;
+   }
+   
+   .board-name a:hover {
+     color: #E8C888;
+   }
+   
+   .board-desc {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.50);
+     margin-top: 2px;
+   }
+   
+   .board-stats {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.45);
+     text-align: right;
+     white-space: nowrap;
+     flex-shrink: 0;
+   }
+   
+   /* ===== Online users ===== */
+   .online-block {
+     margin-bottom: 12px;
+   }
+   
+   .online-heading {
+     font-size: 12px;
+     font-weight: 700;
+     color: #C8A96E;
+     border-bottom: 1px solid rgba(255, 245, 220, 0.10);
+     padding-bottom: 4px;
+     margin-bottom: 8px;
+   }
+   
+   .online-users {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 4px 10px;
+     margin-bottom: 6px;
+   }
+   
+   .online-users .member {
+     font-size: 12px;
+     color: #D4B87A;
+     font-weight: 500;
+   }
+   
+   .online-users .guest {
+     font-size: 12px;
+     color: rgba(240, 232, 208, 0.45);
+   }
+   
+   .online-summary {
+     font-size: 11px;
+     color: rgba(240, 232, 208, 0.45);
+     margin-top: 6px;
+   }
+
+   /* ===== Scrollbar ===== */
+   /* Firefox */
+   * { scrollbar-width: thin; scrollbar-color: rgba(212,170,80,0.45) rgba(0,0,0,0.18); }
+   /* Webkit */
+   ::-webkit-scrollbar { width: 7px; height: 7px; }
+   ::-webkit-scrollbar-track {
+     background: rgba(0,0,0,0.22);
+     border-radius: 999px;
+   }
+   ::-webkit-scrollbar-thumb {
+     background: linear-gradient(180deg, rgba(220,175,85,0.55) 0%, rgba(180,138,55,0.35) 100%);
+     border-radius: 999px;
+     border: 1.5px solid rgba(0,0,0,0.18);
+     transition: background 0.25s;
+   }
+   ::-webkit-scrollbar-thumb:hover {
+     background: linear-gradient(180deg, rgba(232,190,100,0.85) 0%, rgba(200,158,70,0.65) 100%);
+   }
+   ::-webkit-scrollbar-corner { background: transparent; }
